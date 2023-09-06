@@ -24,12 +24,11 @@ Returns a list of strings representing a deck of playing cards
     Divides a deck into a hand and the remainder of the deck.
     The `hand_size` argument indicates the number of cards in hand
 
-	## Examples
-
-			iex> deck = Cards.create_deck
-    	iex> {hand,deck} = Cards.deal(deck,1)
-    	iex> hand
-    	["Ace of Spades"]
+ ## Examples
+ 			iex> deck = Cards.create_deck
+			iex> {hand, deck} = Cards.deal(deck,1)
+			iex> hand
+			["Ace of Spades"]
 
  """
  def deal(deck,hand_size) do
